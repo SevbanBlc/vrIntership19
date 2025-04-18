@@ -38,6 +38,7 @@ export const getQueryFn: <T>(options: {
     }
 
     await throwIfResNotOk(res);
+     window.location.href = "/auth";
     return await res.json();
   };
 
